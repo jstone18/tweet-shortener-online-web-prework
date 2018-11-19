@@ -22,8 +22,11 @@ def word_substituter(tweet_one)
 end
 
 def bulk_tweet_shortener(tweet)
-  tweet_one.gsub(/\w+/, ) do |m|
-    dictionary.fetch(m,m)
-  end
-
+  tweet.split.collect do |word|
+    if dictionary.keys.include?(word.downcase)
+      word = dictionary[word.downcase]
+    else
+      word
+    end
+  end.join(" ")
 end
