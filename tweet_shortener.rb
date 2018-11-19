@@ -20,3 +20,7 @@ def word_substituter(tweet_one)
     dictionary.fetch(m,m)
   end
 end
+
+def bulk_tweet_shortener(tweet_two)
+  
+end
