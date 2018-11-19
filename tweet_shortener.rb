@@ -6,6 +6,6 @@ end
 
 def word_substituter(tweets)
   tweet_one.gsub(/\w+/) do |m|
-    h.fetch(m,m)
+    dictionary.fetch(m,m)
   end
 end
