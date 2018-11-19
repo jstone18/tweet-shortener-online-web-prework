@@ -25,5 +25,5 @@ def bulk_tweet_shortener(tweet_one)
   tweet_one.gsub(/\w+/, ) do |m|
     dictionary.fetch(m,m) = tweet_one_short
   end
-  puts tweet_one_short
+  
 end
