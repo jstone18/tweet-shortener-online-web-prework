@@ -15,8 +15,8 @@ def dictionary
   }
 end
 
-def word_substituter(tweet_one)
-  tweet_one.gsub(/\w+/, ) do |m|
+def word_substituter(tweet)
+  tweet.gsub(/\w+/, ) do |m|
     dictionary.fetch(m,m)
   end
 end
