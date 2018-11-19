@@ -21,9 +21,9 @@ def word_substituter(tweet_one)
   end
 end
 
-def bulk_tweet_shortener(tweet_one)
+def bulk_tweet_shortener(tweet)
   tweet_one.gsub(/\w+/, ) do |m|
-    dictionary.fetch(m,m) 
+    dictionary.fetch(m,m)
   end
 
 end
